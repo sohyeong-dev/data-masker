@@ -34,6 +34,8 @@ public class DataMaskingService {
             case ADDRESS -> addressMask(value, masked.replaceChar());
             // 신용카드 번호 마스킹
             case CREDIT_CARD -> creditCardMask(value, masked.replaceChar());
+            // 사용자 정의 마스킹
+            case CUSTOM -> customMask(value, masked.pattern(), masked.replacement());
         };
     }
 
@@ -161,5 +163,11 @@ public class DataMaskingService {
         maskedValue.append("-");
         maskedValue.append(ccn.substring(12));
         return maskedValue.toString();
+    }
+
+    private static String customMask(String value, String pattern, String replacement) {
+        // 정규 표현식 패턴 매칭 및 마스킹 적용
+
+        return value.replaceAll(pattern, replacement);
     }
 }

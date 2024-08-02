@@ -30,4 +30,7 @@ public class User {
 
     @Masked(maskingType = Masked.MaskingType.FULL)
     private String accountNumber;
+
+    @Masked(maskingType = Masked.MaskingType.CUSTOM, pattern = "^\\d{4}(?=-\\d{4})", replacement = "****")
+    private String ext;
 }

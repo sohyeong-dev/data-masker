@@ -20,6 +20,7 @@ public class DataMaskingServiceTest {
         user.setAddress("서울 영등포구 영등포로3길 12-34");
         user.setCreditCardNumber("1234-5678-1234-5678");
         user.setAccountNumber("1234567890123456");
+        user.setExt("1599-9009");
 
         // when
         DataMaskingService.mask(user);
@@ -33,5 +34,6 @@ public class DataMaskingServiceTest {
         assertEquals("서울 영등포구 영등포로3길 ****", user.getAddress());
         assertEquals("1234-56**-****-5678", user.getCreditCardNumber());
         assertEquals("****************", user.getAccountNumber());
+        assertEquals("****-9009", user.getExt());
     }
 }

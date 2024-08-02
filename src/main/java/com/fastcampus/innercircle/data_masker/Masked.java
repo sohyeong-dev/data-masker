@@ -18,8 +18,11 @@ public @interface Masked {
 
     String pattern() default ""; // 고정 패턴 마스킹용 패턴
 
+    String replacement() default "";    // 사용자 정의 마스킹 규칙
+
     enum MaskingType {
-        PARTIAL, FULL, FIXED_PATTERN, RRN, EMAIL, ADDRESS, CREDIT_CARD
+        PARTIAL, FULL, FIXED_PATTERN, RRN, EMAIL, ADDRESS, CREDIT_CARD,
+        CUSTOM  // 정규 표현식을 사용하여 마스킹 규칙 정의
     }
 }
 
