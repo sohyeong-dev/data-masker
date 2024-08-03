@@ -82,6 +82,7 @@ done
 
 # This is normally unused
 # shellcheck disable=SC2034
+APP_NAME="Gradle"
 APP_BASE_NAME=${0##*/}
 # Discard cd standard output in case $CDPATH is set (https://github.com/gradle/gradle/issues/25036)
 APP_HOME=$( cd "${APP_HOME:-./}" > /dev/null && pwd -P ) || exit

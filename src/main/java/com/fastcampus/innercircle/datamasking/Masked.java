@@ -1,4 +1,4 @@
-package com.fastcampus.innercircle.data_masker;
+package com.fastcampus.innercircle.datamasking;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

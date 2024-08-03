@@ -1,6 +1,6 @@
-package com.fastcampus.innercircle.data_masker.examples;
+package com.fastcampus.innercircle.datamasking.examples;
 
-import com.fastcampus.innercircle.data_masker.Masked;
+import com.fastcampus.innercircle.datamasking.Masked;
 import lombok.Getter;
 import lombok.Setter;
 

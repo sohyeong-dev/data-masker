@@ -1,8 +1,8 @@
-package com.fastcampus.innercircle.data_masker;
+package com.fastcampus.innercircle.datamasking;
 
 import java.lang.reflect.Field;
 
-public class DataMaskingService {
+public class DataMasker {
 
     public static void mask(Object object) throws IllegalAccessException {
         Class<?> clazz = object.getClass();

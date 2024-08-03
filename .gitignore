@@ -1,11 +1,10 @@
-HELP.md
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### STS ###
+### Eclipse ###
 .apt_generated
 .classpath
 .factorypath
@@ -18,7 +17,10 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-.idea
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
 *.iws
 *.iml
 *.ipr
@@ -35,3 +37,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Mac OS ###
+.DS_Store

@@ -1,11 +1,11 @@
-package com.fastcampus.innercircle.data_masker;
+package com.fastcampus.innercircle.datamasking;
 
-import com.fastcampus.innercircle.data_masker.examples.User;
+import com.fastcampus.innercircle.datamasking.examples.User;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DataMaskingServiceTest {
+public class TestDataMasker {
 
     @Test
     void testMaskUser() throws IllegalAccessException {
@@ -23,7 +23,7 @@ public class DataMaskingServiceTest {
         user.setExt("1599-9009");
 
         // when
-        DataMaskingService.mask(user);
+        DataMasker.mask(user);
 
         // then
         assertEquals(123L, user.getId());
