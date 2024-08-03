@@ -19,7 +19,7 @@ public class DataMasker {
         }
     }
 
-    private static String applyMask(String value, Masked masked) {
+    public static String applyMask(String value, Masked masked) {
         return switch (masked.maskingType()) {
             // 부분 마스킹
             case PARTIAL -> partialMask(value, masked.start(), masked.end(), masked.replaceChar());
