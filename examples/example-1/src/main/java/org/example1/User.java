@@ -1,11 +1,13 @@
-package com.fastcampus.innercircle.datamasking.examples;
+package org.example1;
 
 import com.fastcampus.innercircle.datamasking.Masked;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString
 public class User {
 
     private Long id;
