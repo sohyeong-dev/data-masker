@@ -30,17 +30,5 @@ public class testMaskUser {
 
         // then
         assertEquals(0, exitValue);
-        /*
-        assertEquals(123L, user.getId());
-        assertEquals("홍*동", user.getName());
-        assertEquals("123456-1******", user.getRrn());
-        assertEquals("010-****-5678", user.getPhoneNumber());
-        assertEquals("ex*****@abcd.com", user.getEmail());
-        assertEquals("서울 영등포구 영등포로3길 ****", user.getAddress());
-        assertEquals("1234-56**-****-5678", user.getCreditCardNumber());
-        assertEquals("****************", user.getAccountNumber());
-        assertEquals("****-9009", user.getExt());
-
-         */
     }
 }

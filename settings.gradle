@@ -1,3 +1,5 @@
 rootProject.name = 'data-masker'
 include 'examples:example-1'
 findProject(':examples:example-1')?.name = 'example-1'
+include 'examples:example-2'
+findProject(':examples:example-2')?.name = 'example-2'
